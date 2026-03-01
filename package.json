@@ -1,5 +1,5 @@
 {
-  "name": "cc-feishu",
+  "name": "@jawkjiang/cc-feishu",
   "version": "0.1.0",
   "description": "Claude Code Feishu bridge - Connect Claude Code with Feishu bot for seamless AI-powered development workflow",
   "type": "module",

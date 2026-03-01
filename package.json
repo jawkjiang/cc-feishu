@@ -1,16 +1,45 @@
 {
   "name": "cc-feishu",
   "version": "0.1.0",
-  "description": "Claude Code Feishu bridge service",
+  "description": "Claude Code Feishu bridge - Connect Claude Code with Feishu bot for seamless AI-powered development workflow",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
     "cc-feishu": "dist/cli.js"
   },
+  "files": [
+    "dist",
+    "config.example.toml",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsx src/index.ts",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "feishu",
+    "lark",
+    "bot",
+    "ai",
+    "chatbot",
+    "bridge"
+  ],
+  "author": "jawkjiang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jawkjiang/cc-feishu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jawkjiang/cc-feishu/issues"
+  },
+  "homepage": "https://github.com/jawkjiang/cc-feishu#readme",
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
